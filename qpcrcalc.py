@@ -1,7 +1,6 @@
 import pandas as pd
 
-# Read the Excel file with specific sheet name
-excel_file = '2024-02-15_112154)2ndrun.xls'
+excel_file = '2024-02-15_112154)2ndrun.xls' #file should be in same folder as qpcrcalc.py
 sheet_name = 'Results'
 df = pd.read_excel(excel_file, sheet_name=sheet_name)
 
@@ -50,4 +49,4 @@ df_output = pd.DataFrame(output_data)
 
 # Save DataFrame to Excel
 output_excel_file = 'output_data.xlsx'  # Specify the output file name
-df_output.to_excel(output_excel_file, index=False)
+df_output.to_excel(output_excel_file, index=False) #new output file will be extracted in same folder as qpcrcalc.py file 
